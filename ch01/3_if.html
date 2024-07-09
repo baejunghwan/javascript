@@ -18,20 +18,32 @@
     //     alert("a작다"); 
     // }
     
-    var engScore = 60;
+    // var engScore = 60;
+    // if (engScore >= 90) {
+    //     alert("A");
+    // } else if (engScore >= 80) {
+    //     alert("B");
+    // } else if (engScore >= 70) {
+    //     alert("C");
+    // } else {
+    //     alert("F");
+    // }
+    // } else if칸은 한칸만 띄기, alert값은 tap한번만
+
+//   abcdf까지 만들기
+    var engScore = 50;
     if (engScore >= 90) {
         alert("A");
-    }   else if (engScore >= 80) {
+    } else if (engScore >=80 && engScore <=89) {
         alert("B");
-    }   else if (engScore >= 70) {
+    } else if (engScore >=70 && engScore <=79) {
         alert("C");
-    }   
-    else {
-        alert("null");
+    } else if (engScore >=60 && engScore <=69) {
+        alert("D");
+    } else {
+        alert("F");
     }
-
-
-
+// 논리연산자 쓸때 : 조건에 선언한거 논리연산자 좌우로 값 넣어주기 (양옆으로 engScore 부여해주기)
 
     </script>
 
