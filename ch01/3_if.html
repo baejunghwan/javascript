@@ -31,20 +31,62 @@
     // } else if칸은 한칸만 띄기, alert값은 tap한번만
 
 //   abcdf까지 만들기
+    // var engScore = 50;
+    // if (engScore >= 90) {
+    //     alert("A");
+    // } else if (engScore >=80 && engScore <=89) {
+    //     alert("B");
+    // } else if (engScore >=70 && engScore <=79) {
+    //     alert("C");
+    // } else if (engScore >=60 && engScore <=69) {
+    //     alert("D");
+    // } else {
+    //     alert("F");
+    // }
+// 논리연산자 쓸때 : 조건에 선언한거 논리연산자 좌우로 값 넣어주기 (양옆으로 engScore 부여해주기)
+
+// f를 제외하고 a+07 a-04 a00 이런식으로 작성하기
+// ##중첩문
     var engScore = 50;
     if (engScore >= 90) {
-        alert("A");
-    } else if (engScore >=80 && engScore <=89) {
-        alert("B");
-    } else if (engScore >=70 && engScore <=79) {
-        alert("C");
-    } else if (engScore >=60 && engScore <=69) {
-        alert("D");
+        if (engScore >= 90  && engScore >= 97) {
+            alert("A+");
+        } else if (engScore < 97 && engScore >= 94) {
+            alert("A0");
+        } else {
+            alert("A-");
+        }
+    } else if (engScore >= 80) {
+        if (engScore >= 80 && engScore >= 87) {
+            alert("B+");
+        } else if (engScore < 87 && engScore >= 84) {
+            alert("B0");
+        } else {
+            alert("B-");
+        }
+    } else if (engScore >= 70) {
+        if (engScore >= 70 && engScore >= 77) {
+            alert("C+");
+        } else if (engScore < 77 && engScore >= 74) {
+            alert("C0");
+        } else {
+            alert("C-");
+        }
+    } else if (engScore >= 60) {
+        if (engScore >= 60 && engScore >= 67) {
+            alert("D+");
+        } else if (engScore < 67 && engScore >= 64) {
+            alert("D0");
+        } else {
+            alert("D-");
+        }
     } else {
         alert("F");
     }
-// 논리연산자 쓸때 : 조건에 선언한거 논리연산자 좌우로 값 넣어주기 (양옆으로 engScore 부여해주기)
-
+// 조건에서 engScore >= 60 할때 논리연산자 다음에 띄어쓰기 하기.
+ 
+ 
+ 
     </script>
 
 </body>
