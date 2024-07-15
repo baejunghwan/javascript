@@ -135,187 +135,155 @@
         // 출력 "변수 1과 변수 2중 큰 수는 ? 입니다." (함수2개 선언)
         // 출력도 함수화할 것
 
-        // 내 풀이
-        // num1, num2로 변수 2개를 선언한다.
-        // 두수 비교해 큰수를 return하는 함수1번 : > < == 총 5가지 경우 (변수가 딱2개이므로)
-        // 실제 사칙연산 수행할 함수2번 : 
-        // 변수 1과 변수 2중 큰 수를 판별후 출력
-        // + a-b>0 a>b, a-b=0 a=b, a-b<0 a<b 꼴로 a-b = result 선언하고 해당 함수 2개 만들기.
+//         내 풀이
+//         num1, num2로 변수 2개를 선언한다.
+//         두수 비교해 큰수를 return하는 함수1번 : > < == 총 5가지 경우 (변수가 딱2개이므로)
+//         실제 사칙연산 수행할 함수2번 : 
+//         변수 1과 변수 2중 큰 수를 판별후 출력
+//         + a-b>0 a>b, a-b=0 a=b, a-b<0 a<b 꼴로 a-b = result 선언하고 해당 함수 2개 만들기.
 
-        // var num1 = 2;
-        // var num2 = 1;
+//         var num1 = 2;
+//         var num2 = 1;
 
-        // function calculator (num1,num2) {
-        //     alert(num1 - num2);
-        //     return (num1 - num2);
-        // }   
-        // function compare (num1,num2) {
-        //     let a = calculator(num1,num2);
-        //     alert(a);
-        //     if (a > 0) {
-        //         alert("num1 > num2");
-        //         return "num1 > num2";
-        //     }   else if (a = 0) {
-        //         alert("num1 = num2");
-        //         return "num1 = num2";
-        //     }   else {
-        //         alert("num1 < num2");
-        //         return "num1 < num2";
-        //     }    
-        // }       
+//         function calculator (num1,num2) {
+//             alert(num1 - num2);
+//             return (num1 - num2);
+//         }   
+//         function compare (num1,num2) {
+//             let a = calculator(num1,num2);
+//             alert(a);
+//             if (a > 0) {
+//                 alert("num1 > num2");
+//                 return "num1 > num2";
+//             }   else if (a = 0) {
+//                 alert("num1 = num2");
+//                 return "num1 = num2";
+//             }   else {
+//                 alert("num1 < num2");
+//                 return "num1 < num2";
+//             }    
+//         }       
 
-        // // var result = compare(num1,num2);
-        // // var result = compare(2,1); 
+//         // var result = compare(num1,num2);
+//         // var result = compare(2,1); 
 
-        // function result (num1,num2) {
-        //     let b = compare(num1,num2)
-        //     alert(b);
-        //     console.log("변수1과 변수2 중 큰 수는 ?입니다.");
-        // }
+//         function result (num1,num2) {
+//             let b = compare(num1,num2)
+//             alert(b);
+//             console.log("변수1과 변수2 중 큰 수는 ?입니다.");
+//         }
         
-        // result(num1,num2);
+//         result(num1,num2);
      
 
-        // 새로 풀이 (함수 정의때 return쓰면 사용때 꼭 받아주기)
+//         // 새로 풀이 (함수 정의때 return쓰면 사용때 꼭 받아주기)
 
-        // 문제 ㅣ 정수형 변수 2개 선언
-        // 두 수를 비교하여 큰 수를 return
-        // 출력 "변수 1과 변수 2중 큰 수는 ? 입니다." (함수2개 선언)
-        // 출력도 함수화할 것
+//         // 문제 ㅣ 정수형 변수 2개 선언
+//         // 두 수를 비교하여 큰 수를 return
+//         // 출력 "변수 1과 변수 2중 큰 수는 ? 입니다." (함수2개 선언)
+//         // 출력도 함수화할 것
         
-      // 1번 문제 해설  
-    var int1 = 30;
-    var int2 = 20;
+//       // 1번 문제 해설  
+//     var int1 = 30;
+//     var int2 = 20;
     
-    var num = bigNumberWhich(int1, int2);
-    display(int1, int2, num);
+//     var num = bigNumberWhich(int1, int2);
+//     display(int1, int2, num);
 
-    function bigNumberWhich(num1,num2){
-        let result;
-        if(num1 > num2)
-            result = num1;
-        else
-            result = num2;
-        return result;
-    }
+//     function bigNumberWhich(num1,num2){
+//         let result;
+//         if(num1 > num2)
+//             result = num1;
+//         else
+//             result = num2;
+//         return result;
+//     }
         
-    function display(num1, num2, bigNumber){
-        alert(num1 + " 와" + num2 + " 중 큰수는 " + bigNumber + "입니다.");
-    }
+//     function display(num1, num2, bigNumber){
+//         alert(num1 + " 와" + num2 + " 중 큰수는 " + bigNumber + "입니다.");
+//     }
 
-//  ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-    // 2번 문제 
-    // 정수형 변수 1개 선언
-    // 짝수 인지 홀수 인지 판단하는 함수
-    // "? 수는 짝수/홀수 입니다." 출력 하는 함수
+// //  ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//     // 2번 문제 
+//     // 정수형 변수 1개 선언
+//     // 짝수 인지 홀수 인지 판단하는 함수
+//     // "? 수는 짝수/홀수 입니다." 출력 하는 함수
     
-    // 내 풀이 2n 
-    // var num1 = 1;
+//     // 내 풀이 2n 
+//     // var num1 = 1;
     
-    // var a = judge(num1);
-    // display(num1, a);
+//     // var a = judge(num1);
+//     // display(num1, a);
 
-    // function calculator(num1, a){
-    //     let result;
-    //     if()
-    // }
+//     // function calculator(num1, a){
+//     //     let result;
+//     //     if()
+//     // }
 
-    // 2번 문제 해설
-    var int3 = 0.1;
-    var string = oddEven(int3);  // 이 두줄이 없으면 받아줄 애가 없다.
-    display(int3, string);       // 이 두줄이 없으면 받아줄 애가 없다.
+//     // 2번 문제 해설
+//     var int3 = 0.1;
+//     var string = oddEven(int3);  // 이 두줄이 없으면 받아줄 애가 없다.
+//     display(int3, string);       // 이 두줄이 없으면 받아줄 애가 없다.
 
-    function oddEven(num){
-        let result;
-        if(num%2 == 0){
-            result = "짝수";
-        } else {
-            result = "홀수";
-        }
-        return result;
-    }
+//     function oddEven(num){
+//         let result;
+//         if(num%2 == 0){
+//             result = "짝수";
+//         } else {
+//             result = "홀수";
+//         }
+//         return result;
+//     }
 
-    function display(num, str){
-        if(num == 0){
-            alert("0은 그냥 0이다.");
-        } else if (num < 0) {
-            alert("음수를 넣지 마시오."); // 여기서부터는 예외사항들 하나씩 넣은 개념이다. Ex:in3 에 0.1넣으면 홀수어쩌고로 출력된다. 
-        } else {
-            alert(num + "은/는 " + str + " 입니다.");
-        }
-    }
+//     function display(num, str){
+//         if(num == 0){
+//             alert("0은 그냥 0이다.");
+//         } else if (num < 0) {
+//             alert("음수를 넣지 마시오."); // 여기서부터는 예외사항들 하나씩 넣은 개념이다. Ex:in3 에 0.1넣으면 홀수어쩌고로 출력된다. 
+//         } else {
+//             alert(num + "은/는 " + str + " 입니다.");
+//         }
+//     }
 // + 추가사항 | return 함수 없으면 받아줄 필요 x 
 // 함수 사용,정의 명확하게 하기.
 
 // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    // *** 개인 숙제 ***
 
- 1번 문제 ㅣ 정수형 변수 2개 선언
-        두 수를 비교하여 큰 수를 return
-        출력 "변수 1과 변수 2중 큰 수는 ? 입니다." (함수2개 선언)
-        출력도 함수화할 것
+//  a-b선언 = num 
+//  num값이 > 0 면     문구로 a는 b보다 큽니다. if
+//  num값이 = 0 이면   문구로 a는 b와 같습니다. else if
+//  num값이 < 0 이면    문구로 a는 b보다 작습니다. else
+var num1 = 1;
+var num2 = 2;
+var num = num1 - num2;  
 
-        내 풀이
-        num1, num2로 변수 2개를 선언한다.
-        두수 비교해 큰수를 return하는 함수1번 : > < == 총 5가지 경우 (변수가 딱2개이므로)
-        실제 사칙연산 수행할 함수2번 : 
-        변수 1과 변수 2중 큰 수를 판별후 출력
-        + a-b>0 a>b, a-b=0 a=b, a-b<0 a<b 꼴로 a-b = result 선언하고 해당 함수 2개 만들기.
+function display(num1, num2){
+    var result = calculator(num1, num2, num);
+    console.log(num1 + " 값은 " + num2 + "와 비교했을 때 " + result);
+    return result;
+}    
 
-        var num1 = 2;
-        var num2 = 1;
-
-        function calculator (num1,num2) {
-            alert(num1 - num2);
-            return (num1 - num2);
-        }   
-        function compare (num1,num2) {
-            let a = calculator(num1,num2);
-            alert(a);
-            if (a > 0) {
-                alert("num1 > num2");
-                return "num1 > num2";
-            }   else if (a = 0) {
-                alert("num1 = num2");
-                return "num1 = num2";
-            }   else {
-                alert("num1 < num2");
-                return "num1 < num2";
-            }    
-        }       
-
-        // var result = compare(num1,num2);
-        // var result = compare(2,1); 
-
-        function result (num1,num2) {
-            let b = compare(num1,num2)
-            alert(b);
-            console.log("변수1과 변수2 중 큰 수는 ?입니다.");
-        }
-        
-        result(num1,num2);
-
-        // ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-         // 1번 문제 해설  
-    var int1 = 30;
-    var int2 = 20;
-    
-    var num = bigNumberWhich(int1, int2);
-    display(int1, int2, num);
-
-    function bigNumberWhich(num1,num2){
-        let result;
-        if(num1 > num2)
-            result = num1;
-        else
-            result = num2;
-        return result;
+function calculator(num1, num2, num){
+    let result;
+    if (num > 0) {
+        console.log(num1 + " 값은 " + num2 + "와 비교 시 큽니다.");
+        result = "첫번째 값이 두번째 값보다 큽니다.";
+    } else if (num < 0) {
+        console.log(num1 + " 값은 " + num2 + "와 비교 시 작습니다.");
+        result = "첫번째 값이 두번째 값보다 작습니다.";
+    } else {
+        console.log(num1 + " 값은 " + num2 + "와 같습니다.");
+        result = "첫번째 값과 두번째 값이 같습니다.";
     }
-        
-    function display(num1, num2, bigNumber){
-        alert(num1 + " 와" + num2 + " 중 큰수는 " + bigNumber + "입니다.");
-    }
-    // 출력하는 과정은 비슷해도 안에 알고리즘값이 다르기 때문에 내꺼는 보완이 필요하다. ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    return result;
+} 
 
+display(num1, num2);
+
+display(num1, num2);
+
+ 
     </script>
 
 </body>
